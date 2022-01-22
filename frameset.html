@@ -1,0 +1,73 @@
+Index.html
+<html>
+<body>
+<h2>Different Type of Frames in HTML</h2> <br>
+1. Navigation Frame :: <a href="navigationframe/navigation_frame.html" target="two">Click
+Here</a><br><br>
+2. Floating Frame :: <a href="floating_frame.html" target="two">Click Here</a><br><br>
+3. Mixed Frame ::<a href="mixed_frame.html" target="two">Click Here</a><br><br>
+</body>
+</html>
+Mixed_Frame.html
+<html>
+<head>
+<title>Mixed Frames</title>
+</head>
+<frameset cols = "33.33%,33.33%,33.33%">
+<frame name = "top" src = "https://mcetonline.com/"/>
+<frame name = "main" src = "https://www.cet.ac.in/" />
+
+<frameset rows = "50%,50%">
+<frame name = "top" src = "https://tkmce.ac.in/" />
+<frame name = "main" src = "https://gectcr.ac.in/ " />
+</frameset>
+<noframes>
+<body>Your browser does not support frames.</body>
+</noframes>
+</frameset>
+</html>
+floating_frame.html
+<html>
+<body>
+<center>
+<h2>Floating Frame</h2><br>
+<iframe src="https://mcetonline.com/" width="800px" height="500px"></iframe>
+</center>
+</body>
+</html>
+NavigationFrame/navi_body.html
+<html>
+<html>
+<body bgcolor = "#9abbed">
+<h3>This is main page and content from any link will be displayed here.</h3>
+<p>So now click any link and see the result.</p>
+</body>
+</html>
+
+NavigationFrame/navi_menu.html
+<html>
+<body bgcolor = "#dcf1f7">
+<h3 style="color:#4f90c2">MENU</h3><br>
+<a href = "https://en.wikipedia.org/wiki/HTML" target = "main_page">What is HTML?</a>
+<br />
+<br />
+<a href = "https://en.wikipedia.org/wiki/JavaScript" target = "main_page">What is
+JavaScript?</a>
+<br />
+<br />
+<a href = "https://en.wikipedia.org/wiki/CSS" target = "main_page">What is CSS?</a>
+</body>
+</html>
+NavigationFrame/navigation_frame.html
+<html>
+<head>
+<title>HTML Target Frames</title>
+</head>
+<frameset cols = "200, *">
+<frame src = "navi_menu.html" name = "menu_page" />
+<frame src = "navi_body.html" name = "main_page" />
+<noframes>
+<body>Your browser does not support frames.</body>
+</noframes>
+</frameset>
+</html>
