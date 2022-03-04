@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript event handling</title>
+	<style type="text/css">
+	img{
+	width: 771px;
+    height: 550px;
+   }
+#txt2
+{
+    display:none;
+}
+</style>
+</head>
+<body bgcolor="#808080">
+    <center>
+	<div id="main">
+		<div id="image-text">
+			<img src="pic1html.jpg" id="img1">
+		</div>
+		<div id="head">
+			<h1 id="txt1">WELCOME TO HTML...</h1>
+			<h1 id="txt2">SECOND HTML PAGE...</h1>
+		</div>
+	</div>
+    </center>
+
+
+		<script type="text/javascript">
+			document.getElementById('main').addEventListener("mouseover",ch1)
+			document.getElementById('main').addEventListener("mouseout",ch2)
+
+			function ch1()
+                        {
+				document.getElementById('img1').src="pic1html.jpg"
+				document.getElementById('txt1').style.display="none"
+				document.getElementById('txt2').style.display="block"
+			}
+
+			function ch2()
+                        {
+				document.getElementById('img1').src="pic2html.jpg"
+				document.getElementById('txt1').style.display="block"
+				document.getElementById('txt2').style.display="none"
+			}
+
+		</script>
+
+</body>
+</html>
