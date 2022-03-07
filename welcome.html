@@ -1,0 +1,14 @@
+<html>
+<body bgcolor="yellow">
+	<label>ENTER THE NAME</label><input type="text" id="t1"><br><br>
+	<input type="submit" value="SUBMIT" id="t1" onClick="fn()">
+	<span id="show" style="color:red"></span>
+<script>
+	function fn()
+	{
+		var a=document.getElementById("t1").value;
+		document.getElementById("show").innerHTML="welcome "+a;
+	}
+</script>
+</body>
+</html>
